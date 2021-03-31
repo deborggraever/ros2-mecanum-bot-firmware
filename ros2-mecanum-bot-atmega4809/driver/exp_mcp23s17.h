@@ -1,0 +1,36 @@
+/*
+ * exp_mcp23s17.h
+ *
+ * Created: 24/03/2021 23:13:28
+ *  Author: randy
+ */ 
+
+
+#ifndef EXP_MCP23S17_H_
+#define EXP_MCP23S17_H_
+
+#include <stdbool.h>
+
+typedef enum {
+	EXP_MCP23S17_GPA0,
+	EXP_MCP23S17_GPA1,
+	EXP_MCP23S17_GPA2,
+	EXP_MCP23S17_GPA3,
+	EXP_MCP23S17_GPA4,
+	EXP_MCP23S17_GPA5,
+	EXP_MCP23S17_GPA6,
+	EXP_MCP23S17_GPA7,
+	EXP_MCP23S17_GPB0,
+	EXP_MCP23S17_GPB1,
+	EXP_MCP23S17_GPB2,
+	EXP_MCP23S17_GPB3,
+	EXP_MCP23S17_GPB4,
+	EXP_MCP23S17_GPB5,
+	EXP_MCP23S17_GPB6,
+	EXP_MCP23S17_GPB7,
+} exp_mcp23s17_channel_t;
+
+void exp_mcp23s17_init();
+bool exp_mcp23s17_get_level(exp_mcp23s17_channel_t);
+
+#endif /* EXP_MCP23S17_H_ */
